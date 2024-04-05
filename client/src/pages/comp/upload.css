@@ -1,0 +1,79 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .page-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .page-box {
+    flex: 1;
+    margin-right: 2rem;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+  }
+  
+  .page-box h2 {
+    margin-bottom: 1rem;
+  }
+  
+  .page-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .page-box label {
+    margin-bottom: 0.5rem;
+  }
+  
+  .page-box input,
+  .page-box textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .page-box button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  .page-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .page-box li {
+    margin-bottom: 1rem;
+  }
+  
+  .page-box a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .page-content {
+      flex-direction: column;
+    }
+  
+    .page-box {
+      margin-right: 0;
+      margin-bottom: 2rem;
+    }
+  }
